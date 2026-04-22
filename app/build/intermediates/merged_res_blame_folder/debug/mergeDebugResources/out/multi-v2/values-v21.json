@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.elkinmendoza.exploraapp-mergeDebugResources-49:/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/elkin/.gradle/caches/9.1.0/transforms/8dcdada35cebd6f34f64d6abdcc9bd01/transformed/credentials-play-services-auth-1.2.0-rc01/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "543"
+                    }
+                }
+            ]
+        }
+    ]
+}
