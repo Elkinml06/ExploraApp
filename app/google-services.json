@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610664887733",
+    "project_id": "explora-app-6dde9",
+    "storage_bucket": "explora-app-6dde9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610664887733:android:16a6a71f9dde52a2bd95fc",
+        "android_client_info": {
+          "package_name": "com.elkinmendoza.exploraapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5T6gfMzeDnea_hANLKhZf6VKKMS8EFwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
