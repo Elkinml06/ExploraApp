@@ -1,10 +1,10 @@
-#Wed Apr 22 09:45:52 COT 2026
-base.0=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
-base.3=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.4=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.5=/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Fri Apr 24 09:40:59 COT 2026
+base.0=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+base.3=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+base.4=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.5=/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

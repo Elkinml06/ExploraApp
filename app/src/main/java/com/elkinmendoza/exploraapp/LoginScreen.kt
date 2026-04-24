@@ -1,5 +1,6 @@
 package com.elkinmendoza.exploraapp
 
+import android.app.Activity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -20,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -27,6 +29,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.elkinmendoza.exploraapp.ui.theme.ExploraAppTheme
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.auth
 
 @Composable
 fun LoginScreen(
@@ -39,6 +45,11 @@ fun LoginScreen(
     val primaryOrange = Color(0xFFE45D25)
     val lightGrayBg = Color(0xFFF8F9FE)
     val inputBg = Color(0xFFE5E5EA)
+
+    //Firebase Configuracion
+    val auth = Firebase.auth
+    val activity = LocalView.current.context as Activity
+    var loginError by remember { mutableStateOf("") }
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -187,9 +198,38 @@ fun LoginScreen(
                 )
 
                 Spacer(modifier = Modifier.height(32.dp))
-
+                if (loginError.isNotEmpty()) {
+                    Text(
+                        loginError,
+                        color = Color.Red,
+                        modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp)
+                    )
+                }
                 Button(
-                    onClick = { onLoginSuccess() },
+                    onClick = {
+                        val emailValidation = validateEmail(email)
+                        val passwordValidation = validatePassword(password)
+
+                        if (!emailValidation.first) {
+                            loginError = emailValidation.second
+                        } else if (!passwordValidation.first) {
+                            loginError = passwordValidation.second
+                        } else {
+                            // Si las validaciones pasan, intentar login con Firebase
+                            auth.signInWithEmailAndPassword(email, password)
+                                .addOnCompleteListener(activity) { task ->
+                                    if (task.isSuccessful) {
+                                        onLoginSuccess()
+                                    } else {
+                                        loginError = when(task.exception) {
+                                            is FirebaseAuthInvalidCredentialsException -> "Correo o Contraseña incorrecta"
+                                            is FirebaseAuthInvalidUserException -> "No existe un cuenta con este correo"
+                                            else -> "Error al iniciar sesion. Intenta de nuevo"
+                                        }
+                                    }
+                                }
+                        }
+                    },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(56.dp),

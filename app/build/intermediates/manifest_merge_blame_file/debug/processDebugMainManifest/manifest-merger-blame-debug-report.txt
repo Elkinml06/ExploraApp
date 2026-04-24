@@ -30,47 +30,47 @@
 19-->[androidx.core:core:1.18.0] /Users/elkin/.gradle/caches/9.1.0/transforms/47571db82f6204df09178440c972421d/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:5:5-25:19
+21-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:5:5-25:19
 22        android:allowBackup="true"
-22-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:6:9-35
+22-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:6:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.18.0] /Users/elkin/.gradle/caches/9.1.0/transforms/47571db82f6204df09178440c972421d/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
 24        android:dataExtractionRules="@xml/data_extraction_rules"
-24-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:7:9-65
+24-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:7:9-65
 25        android:debuggable="true"
 26        android:extractNativeLibs="false"
 27        android:fullBackupContent="@xml/backup_rules"
-27-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:8:9-54
+27-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:8:9-54
 28        android:icon="@mipmap/ic_launcher"
-28-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:9:9-43
+28-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:9:9-43
 29        android:label="@string/app_name"
-29-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:10:9-41
+29-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:10:9-41
 30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:11:9-54
+30-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:11:9-54
 31        android:supportsRtl="true"
-31-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:12:9-35
+31-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:12:9-35
 32        android:testOnly="true"
 33        android:theme="@style/Theme.ExploraApp" >
-33-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:13:9-48
+33-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:13:9-48
 34        <activity
-34-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:14:9-24:20
+34-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:14:9-24:20
 35            android:name="com.elkinmendoza.exploraapp.MainActivity"
-35-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:15:13-41
+35-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:15:13-41
 36            android:exported="true"
-36-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:16:13-36
+36-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:16:13-36
 37            android:label="@string/app_name"
-37-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:17:13-45
+37-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:17:13-45
 38            android:theme="@style/Theme.ExploraApp" >
-38-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:18:13-52
+38-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:18:13-52
 39            <intent-filter>
-39-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:19:13-23:29
+39-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:19:13-23:29
 40                <action android:name="android.intent.action.MAIN" />
-40-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:20:17-69
-40-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:20:25-66
+40-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:20:17-69
+40-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:20:25-66
 41
 42                <category android:name="android.intent.category.LAUNCHER" />
-42-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:22:17-77
-42-->/Users/elkin/Documents/Universidad/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:22:27-74
+42-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:22:17-77
+42-->/Users/elkin/Documents/Elkin/Universidad/2026/Moviles/ExploraApp/app/src/main/AndroidManifest.xml:22:27-74
 43            </intent-filter>
 44        </activity>
 45        <activity
