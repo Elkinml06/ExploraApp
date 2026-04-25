@@ -4,7 +4,7 @@
             "outputFile": "com.elkinmendoza.exploraapp-mergeDebugResources-49:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/Users/elkin/.gradle/caches/9.1.0/transforms/08834a3035b34b8ee37073caf46d45cd/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "source": "C:\\Users\\elmml\\.gradle\\caches\\9.1.0\\transforms\\08834a3035b34b8ee37073caf46d45cd\\workspace\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
