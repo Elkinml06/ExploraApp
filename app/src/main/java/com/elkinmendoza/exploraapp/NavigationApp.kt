@@ -6,13 +6,31 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.elkinmendoza.exploraapp.ui.elements.HomeScreen
+import com.elkinmendoza.exploraapp.ui.elements.LoginScreen
+import com.elkinmendoza.exploraapp.ui.elements.RegisterScreen
+import com.elkinmendoza.exploraapp.ui.elements.addTouristicPlaceScreen
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 
 @Composable
 fun NavigationApp() {
+
     val myNavController = rememberNavController()
+    var myStartDestination: String = "login"
+
+    // Mantener Sesion Activa
+    val auth = Firebase.auth
+    val currentUser = auth.currentUser
+
+    if (currentUser != null) {
+        myStartDestination = "home"
+    } else {
+        myStartDestination = "login"
+    }
     NavHost(
         navController = myNavController,
-        startDestination = "login",
+        startDestination = myStartDestination,
         modifier = Modifier.fillMaxSize(),
     ) {
         composable("login") {
@@ -27,13 +45,27 @@ fun NavigationApp() {
         }
         composable("register") {
             RegisterScreen(
-                onRegisterSuccess = { myNavController.navigate("login") },
                 onNavigateToLogin = { myNavController.navigate("login") },
+                onRegisterSuccess = {
+                    myNavController.navigate("home") {
+                        popUpTo("register") {inclusive = true}
+                    }
+                },
                 onBackClick = { myNavController.popBackStack() }
             )
         }
         composable("home") {
-            HomeScreen()
+            HomeScreen(
+                onClickTouristic = {myNavController.navigate("touristicPlaces")},
+                onClickLogout = {
+                    myNavController.navigate("login") {
+                        popUpTo("home") { inclusive = true }
+                    }
+                }
+            )
+        }
+        composable("touristicPlaces") {
+            addTouristicPlaceScreen()
         }
     }
 }
