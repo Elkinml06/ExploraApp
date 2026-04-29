@@ -6,10 +6,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.elkinmendoza.exploraapp.ui.elements.AddTouristicPlaceScreen
 import com.elkinmendoza.exploraapp.ui.elements.HomeScreen
 import com.elkinmendoza.exploraapp.ui.elements.LoginScreen
 import com.elkinmendoza.exploraapp.ui.elements.RegisterScreen
-import com.elkinmendoza.exploraapp.ui.elements.addTouristicPlaceScreen
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 
@@ -65,7 +65,7 @@ fun NavigationApp() {
             )
         }
         composable("touristicPlaces") {
-            addTouristicPlaceScreen()
+            AddTouristicPlaceScreen()
         }
     }
 }
